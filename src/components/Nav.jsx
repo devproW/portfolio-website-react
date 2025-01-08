@@ -40,7 +40,7 @@ function Nav() {
                 : "scale-95 opacity-0 pointer-events-none"
             }`}
           >
-            <ul className="flex flex-col px-14 py-10 space-y-2 max-h-[200px] overflow-y-auto">
+            <ul className="flex flex-col px-20 py-10 space-y-2 max-h-[200px] overflow-y-auto">
               {navLinks.map((item) => (
                 <li key={item.label} className="list-none">
                   <a
