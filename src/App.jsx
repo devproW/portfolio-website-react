@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import Hero from "./sections/Hero";
 import AboutMe from "./sections/AboutMe";
+import Services from "./sections/Services";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       </section>
       <section className="px-12 max-w-7xl mx-auto">
         <AboutMe />
+      </section>
+      <section className="px-12 max-w-7xl mx-auto bg-gray-50">
+        <Services />
       </section>
     </main>
   );

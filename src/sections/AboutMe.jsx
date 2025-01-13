@@ -5,7 +5,7 @@ function AboutMe() {
   return (
     <section
       id="about-me"
-      className="flex max-lg:flex-col justify-around items-start pt-20"
+      className="flex max-lg:flex-col justify-around items-start pt-20 pb-20"
     >
       <div className="flex justify-center items-center max-lg:mt-6 my-auto">
         <img
@@ -17,13 +17,13 @@ function AboutMe() {
         />
       </div>
       <div className="flex flex-col justify-start items-around gap-10 w-[600px]">
-        <h2 className="text-6xl font-poppins font-semibold leading-[88px] relative">
+        <h2 className="text-5xl font-poppins font-semibold relative">
           About Me
-          <span className="absolute bottom-[-4px] left-0 w-36 bg-orange-400 h-[6px]"></span>
+          <span className="absolute bottom-[-20px] left-0 w-28 bg-orange-400 h-[6px]"></span>
         </h2>
-        <div className="flex flex-col justify-between gap-3">
+        <div className="flex flex-col justify-between gap-3 mt-5">
           <h4 className="font-poppins text-base leading-loose">
-            My Name is Firdaus Khalid. I'm a freelance Full Stack AI developer
+            My name is Firdaus Khalid. I'm a freelance Full Stack AI developer
             based in Kuala Lumpur, Malaysia. I'm very passionate and dedicated
             to my work.
           </h4>
