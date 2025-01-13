@@ -1,12 +1,34 @@
 import { navLinks } from "../constants";
 import HamburgerMenu from "./HamburgerMenu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="py-5">
+    <header
+      className={`sticky py-5 top-0 bg-gray-50 z-50 pb-5 transition-shadow ${
+        isScrolled ? "shadow-md" : "shadow-none"
+      }`}
+    >
       <nav className="flex justify-between items-center min-h-12 mx-auto px-12 max-w-7xl">
         <a
           href="#"
