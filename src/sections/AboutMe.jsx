@@ -22,12 +22,12 @@ function AboutMe() {
           <span className="absolute bottom-[-20px] left-0 w-28 bg-orange-400 h-[6px]"></span>
         </h2>
         <div className="flex flex-col justify-between gap-3 mt-5">
-          <h4 className="font-poppins text-base leading-loose">
+          <h4 className="font-poppins text-base leading-loose text-gray-500">
             My name is Firdaus Khalid. I'm a freelance Full Stack AI developer
             based in Kuala Lumpur, Malaysia. I'm very passionate and dedicated
             to my work.
           </h4>
-          <h4 className="font-poppins text-base leading-loose">
+          <h4 className="font-poppins text-base leading-loose text-gray-500">
             With a 6 years experience as a professional Full Stack Developer, I
             have acquired the skills neccessary to build great and premium
             websites.
@@ -36,15 +36,21 @@ function AboutMe() {
         <div className="flex justify-start items-center gap-6">
           <Button
             label="View Works"
-            adjustWidth
+            adjustWidth="w-2/6"
             borderColor="border-orange-400"
+            hoverBgColor="hover:bg-orange-100"
+            hoverTextColor="hover:text-orange-400"
+            textColor="text-white"
+            backgroundColor="bg-orange-400"
           />
           <Button
             label="Download CV"
             backgroundColor="bg-white"
             textColor="text-orange-400"
             borderColor="border-orange-400"
-            adjustWidth
+            hoverBgColor="hover:bg-orange-100"
+            adjustWidth="w-2/6"
+            hoverTextColor="hover:text-white"
           />
         </div>
       </div>

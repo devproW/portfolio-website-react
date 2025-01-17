@@ -14,7 +14,15 @@ function Hero() {
         <h4 className="text-2xl font-poppins leading-8 font-normal mb-12 text-gray-600 w-7/12 tracking-wide">
           A freelance Full Stack AI Developer
         </h4>
-        <Button label="Hire Me" />
+        <Button
+          label="Hire Me"
+          adjustWidth="w-56"
+          borderColor="border-orange-400"
+          hoverBgColor="hover:bg-orange-100"
+          hoverTextColor="hover:text-orange-400"
+          textColor="text-white"
+          backgroundColor="bg-orange-400"
+        />
       </div>
       <div className="flex justify-end items-center w-[670px] h-[600px] animate-fadeInRight max-lg:mt-6">
         <img
