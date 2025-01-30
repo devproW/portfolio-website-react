@@ -14,15 +14,16 @@ function Hero() {
         <h4 className="text-2xl font-poppins leading-8 font-normal mb-12 text-gray-600 w-7/12 tracking-wide">
           A freelance Full Stack AI Developer
         </h4>
-        <Button
-          label="Hire Me"
-          adjustWidth="w-56"
-          borderColor="border-orange-400"
-          hoverBgColor="hover:bg-orange-100"
-          hoverTextColor="hover:text-orange-400"
-          textColor="text-white"
-          backgroundColor="bg-orange-400"
-        />
+        <button
+          onClick={() => {
+            window.location.href = "#contact-me";
+          }}
+          className="flex justify-center items-center font-poppins border h-16 font-medium leading-none text-xl rounded-md 
+      transition-colors duration-300 tracking-wide bg-yellow-500 border-yellow-500 text-white hover:bg-white 
+      hover:text-orange-400 w-56"
+        >
+          Hire Me
+        </button>
       </div>
       <div className="flex justify-end items-center w-[670px] h-[600px] animate-fadeInRight max-lg:mt-6">
         <img
