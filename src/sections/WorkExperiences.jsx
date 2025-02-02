@@ -4,7 +4,7 @@ function WorkExperiences() {
       id="Experiences"
       className="flex flex-col justify-center items-center pt-20 gap-9 max-w-7xl mx-auto pb-20"
     >
-      <h2 className="text-5xl font-poppins font-semibold relative">
+      <h2 className="text-5xl font-poppins font-semibold relative text-center">
         Work Experiences
         <span className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-28 bg-orange-400 h-[6px]"></span>
       </h2>
@@ -13,7 +13,7 @@ function WorkExperiences() {
         specializing as a Senior Data Scientist, delivering impactful solutions
         across industries.
       </h4>
-      <div className="grid grid-cols-3 content-stretch w-full border border-slate-300">
+      <div className="grid max-lg:grid-cols-1 grid-cols-3 content-stretch w-full border border-slate-300">
         <div className="group flex justify-center items-center w-full h-96 transition-colors duration-300 hover:bg-orange-300">
           <div className="flex flex-col justify-start items-start gap-1 w-3/4">
             <h4 className="text-sm font-poppins leading-loose text-gray-500 transition-colors duration-300 group-hover:text-black">
@@ -32,7 +32,7 @@ function WorkExperiences() {
             </h4>
           </div>
         </div>
-        <div className="group flex justify-center items-center w-full h-96 border-r border-l border-slate-300 transition-colors duration-300 hover:bg-orange-300">
+        <div className="group flex justify-center items-center w-full h-96 max-lg:border-t max-lg:border-b lg:border-r lg:border-l border-slate-300 transition-colors duration-300 hover:bg-orange-300">
           <div className="flex flex-col justify-center items-start gap-1  w-3/4">
             <h4 className="text-sm font-poppins leading-loose text-gray-500 transition-colors duration-300 group-hover:text-black">
               March 2021 - APRIL 2022

@@ -29,7 +29,7 @@ function Nav() {
         isScrolled ? "shadow-md" : "shadow-none"
       }`}
     >
-      <nav className="flex justify-between items-center min-h-12 mx-auto px-12 max-w-7xl">
+      <nav className="flex justify-between items-center min-h-12 mx-auto px-12 max-w-7xl max-lg:max-w-4xl">
         <a
           href="#"
           className="pt-2 font-poppins text-[25px] font-bold leading-[1.2] text-black cursor-pointer no-underline"

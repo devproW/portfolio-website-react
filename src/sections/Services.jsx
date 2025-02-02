@@ -15,7 +15,7 @@ function Services() {
         systems, innovative machine learning solutions, and data science
         strategies tailored to meet your unique needs.
       </h4>
-      <div className="grid grid-cols-2 content-stretch gap-12 w-full">
+      <div className="grid max-lg:grid-cols-1 grid-cols-2 content-stretch gap-12 w-full">
         <div className="flex justify-center items-center bg-blue-custom-gradient w-full h-80 rounded-xl">
           <div className="flex flex-col justify-center items-start w-3/4 gap-4">
             <img

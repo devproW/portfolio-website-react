@@ -1,13 +1,12 @@
 import { profileImage1 } from "../assets/images";
-import Button from "../components/Button";
 
 function Hero() {
   return (
     <section
       id="home"
-      className="flex max-lg:flex-col justify-between items-start px-12 max-w-7xl mx-auto"
+      className="flex max-lg:flex-col max-lg:justify-center max-lg:items-center justify-between items-start px-12 max-w-7xl mx-auto"
     >
-      <div className="flex flex-col justify-end w-[500px] h-[400px] max-lg:h-[300px] animate-fadeInLeft">
+      <div className="flex flex-col max-lg:items-center justify-end w-[500px] h-[400px] max-lg:h-[300px] animate-fadeInLeft">
         <h2 className="text-6xl font-poppins font-semibold leading-[88px] mb-1 tracking-wide">
           I'm Firdaus
         </h2>
@@ -25,13 +24,13 @@ function Hero() {
           Hire Me
         </button>
       </div>
-      <div className="flex justify-end items-center w-[670px] h-[600px] animate-fadeInRight max-lg:mt-6">
+      <div className="flex max-lg:justify-center mx-auto justify-end items-center w-full max-w-[670px] h-auto animate-fadeInRight mt-6 max-lg:mt-10">
         <img
           src={profileImage1}
           alt="profile image"
           width={600}
           height={570}
-          className="object-contain"
+          className="w-full h-auto object-contain"
         />
       </div>
     </section>

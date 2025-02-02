@@ -74,8 +74,8 @@ function ContactMe() {
         Contact Me
         <span className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 w-28 bg-orange-400 h-[6px]"></span>
       </h2>
-      <div className="flex justify-between items-start w-full mt-10">
-        <div className="flex flex-col justify-between gap-6 w-1/4">
+      <div className="flex max-lg:flex-col justify-between items-start w-full mt-10">
+        <div className="flex flex-col justify-between gap-6 w-1/4 max-lg:w-full">
           <h2 className="text-lg font-medium font-poppins leading-loose">
             Contact Info
           </h2>
@@ -135,7 +135,7 @@ function ContactMe() {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col justify-start gap-7 w-2/3"
+          className="flex flex-col justify-start gap-7 w-2/3 max-lg:w-full max-lg:mt-10"
         >
           <div className="flex flex-col justify-start gap-2">
             <h2 className="text-sm font-poppins leading-loose text-black">
@@ -154,7 +154,7 @@ function ContactMe() {
               </p>
             )}
           </div>
-          <div className="flex justify-between items-start gap-8">
+          <div className="flex max-lg:flex-col justify-between items-start gap-8">
             <div className="flex flex-col justify-start gap-2 w-full">
               <h2 className="text-sm font-poppins leading-loose text-black">
                 PHONE NUMBER
