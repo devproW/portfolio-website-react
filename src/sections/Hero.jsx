@@ -1,12 +1,12 @@
-import { profileImage1 } from "../assets/images";
+import { profileImage1, profileImage2 } from "../assets/images";
 
 function Hero() {
   return (
     <section
       id="home"
-      className="flex max-lg:flex-col max-lg:justify-center max-lg:items-center justify-between items-start px-12 max-w-7xl mx-auto"
+      className="flex max-lg:flex-col max-lg:justify-center max-lg:items-center justify-between items-center px-24 max-w-7xl mx-auto"
     >
-      <div className="flex flex-col max-lg:items-center justify-end w-[500px] h-[400px] max-lg:h-[300px] animate-fadeInLeft">
+      <div className="flex flex-col max-lg:items-center justify-end w-1/2 h-auto max-lg:h-[300px] animate-fadeInLeft">
         <h2 className="text-6xl font-poppins font-semibold leading-[88px] mb-1 tracking-wide">
           I'm Firdaus
         </h2>
@@ -24,13 +24,13 @@ function Hero() {
           Hire Me
         </button>
       </div>
-      <div className="flex max-lg:justify-center mx-auto justify-end items-center w-full max-w-[670px] h-auto animate-fadeInRight mt-6 max-lg:mt-10">
+      <div className="flex max-lg:justify-center mx-auto justify-center items-center w-1/2 h-auto animate-fadeInRight mt-6 max-lg:mt-10">
         <img
-          src={profileImage1}
+          src={profileImage2}
           alt="profile image"
-          width={600}
-          height={570}
-          className="w-full h-auto object-contain"
+          width={400}
+          height={400}
+          className="object-contain"
         />
       </div>
     </section>

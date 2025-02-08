@@ -94,7 +94,7 @@ function ContactMe() {
               className="text-gray-500 text-xl"
             />
             <h4 className="text-sm font-poppins leading-loose text-gray-500">
-              firdaus@gmail.com
+              firdaus.khalid.d@gmail.com
             </h4>
           </div>
           <div className="flex justify-start items-center gap-3">
@@ -112,7 +112,7 @@ function ContactMe() {
               className="text-gray-500 text-xl"
             />
             <h4 className="text-sm font-poppins leading-loose text-gray-500">
-              www.firdaus.com.my
+              https://devprow.github.io/portfolio-website-react/
             </h4>
           </div>
           <h2 className="text-lg font-normal font-poppins leading-loose mt-3">

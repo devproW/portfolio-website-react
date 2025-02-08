@@ -1,4 +1,4 @@
-import { profileImage1 } from "../assets/images";
+import { profileImage1, profileImage3 } from "../assets/images";
 import Button from "../components/Button";
 
 function AboutMe() {
@@ -18,7 +18,7 @@ function AboutMe() {
     >
       <div className="flex justify-center items-center max-lg:mt-6 my-auto">
         <img
-          src={profileImage1}
+          src={profileImage3}
           alt="profile image"
           width={300}
           height={300}
