@@ -12,6 +12,7 @@ import {
   faTwitter,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import { useForm, ValidationError } from "@formspree/react";
 
 function ContactMe() {
   const [formData, setFormData] = useState({
@@ -35,7 +36,7 @@ function ContactMe() {
     if (name === "email") setEmailError(false); // Clear email error on input change
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmits = (e) => {
     e.preventDefault();
 
     // Regular expression for validating an email address
@@ -64,6 +65,13 @@ function ContactMe() {
       // Proceed with submission logic
     }
   };
+
+  const [state, handleSubmit] = useForm("xvgzqbye"); // Replace with your Formspree ID
+
+  if (state.succeeded) {
+    alert("Form submitted successfully!");
+    // Proceed with submission logic
+  }
 
   return (
     <section
@@ -103,7 +111,7 @@ function ContactMe() {
               className="text-gray-500 text-xl"
             />
             <h4 className="text-sm font-poppins leading-loose text-gray-500">
-              +6 013 3303 3493
+              +6 #########
             </h4>
           </div>
           <div className="flex justify-start items-center gap-3">
@@ -137,6 +145,7 @@ function ContactMe() {
           onSubmit={handleSubmit}
           className="flex flex-col justify-start gap-7 w-2/3 max-lg:w-full max-lg:mt-10"
         >
+          {/* NAME FIELD */}
           <div className="flex flex-col justify-start gap-2">
             <h2 className="text-sm font-poppins leading-loose text-black">
               NAME
@@ -144,17 +153,14 @@ function ContactMe() {
             <input
               name="name"
               type="text"
-              onChange={handleInputChange}
+              required
               className="shadow-md focus:shadow-xl focus:outline-none text-sm font-poppins leading-10 text-gray-500 py-2 px-6"
               placeholder="Type your name"
             />
-            {errors.name && (
-              <p className="text-red-500 text-sm mt-1">
-                This field is required.
-              </p>
-            )}
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
           </div>
           <div className="flex max-lg:flex-col justify-between items-start gap-8">
+            {/* PHONE FIELD */}
             <div className="flex flex-col justify-start gap-2 w-full">
               <h2 className="text-sm font-poppins leading-loose text-black">
                 PHONE NUMBER
@@ -162,61 +168,64 @@ function ContactMe() {
               <input
                 name="phone"
                 type="text"
-                onChange={handleInputChange}
+                required
                 className="shadow-md focus:shadow-xl focus:outline-none text-sm font-poppins leading-10 text-gray-500 py-2 px-6"
                 placeholder="Type your phone number"
               />
-              {errors.phone && (
-                <p className="text-red-500 text-sm mt-1">
-                  This field is required.
-                </p>
-              )}
+              <ValidationError
+                prefix="Phone"
+                field="phone"
+                errors={state.errors}
+              />
             </div>
+            {/* EMAIL FIELD */}
             <div className="flex flex-col justify-start gap-2 w-full">
               <h2 className="text-sm font-poppins leading-loose text-black">
-                EMAIL
+                Email Address
               </h2>
               <input
+                id="email"
+                type="email"
                 name="email"
-                type="text"
-                onChange={handleInputChange}
+                required
                 className="shadow-md focus:shadow-xl focus:outline-none text-sm font-poppins leading-10 text-gray-500 py-2 px-6"
                 placeholder="Type your email address"
               />
-              {errors.email && (
-                <p className="text-red-500 text-sm mt-1">
-                  This field is required.
-                </p>
-              )}
-              {emailError && (
-                <p className="text-red-500 text-sm mt-1">
-                  The e-mail address entered is invalid.
-                </p>
-              )}
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
           </div>
+
+          {/* MESSAGE FIELD */}
           <div className="flex flex-col justify-start gap-2">
             <h2 className="text-sm font-poppins leading-loose text-black">
               Your Message
             </h2>
             <textarea
+              id="message"
               name="message"
-              id=""
-              onChange={handleInputChange}
+              required
               className="shadow-md focus:shadow-xl focus:outline-none text-sm font-poppins leading-10 text-gray-500 py-2 px-6 h-48"
               placeholder="Type your message here"
             ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
-          <Button
-            label="Send Message"
-            adjustWidth="w-56"
-            borderColor="border-orange-400"
-            hoverBgColor="hover:bg-orange-100"
-            hoverTextColor="hover:text-orange-400"
-            textColor="text-white"
-            backgroundColor="bg-orange-400"
-            buttontype="submit"
-          />
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className="flex justify-center items-center font-poppins border h-16 font-medium leading-none text-xl 
+            rounded-md transition-colors duration-300 tracking-wide bg-orange-400 border-orange-400 
+            text-white hover:bg-orange-100 hover:text-orange-400 w-56"
+          >
+            {state.submitting ? "Sending..." : "Send Message"}
+          </button>
         </form>
       </div>
     </section>

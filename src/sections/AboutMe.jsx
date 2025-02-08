@@ -5,7 +5,7 @@ function AboutMe() {
   // const googleDriveFileId = "1Mtr5L4A15IImwGMXXzYPdRruRh3AsXqa7g2Vpw74teI"; // Replace with actual file ID
   // const downloadLink = `https://drive.google.com/uc?id=${googleDriveFileId}&export=download`;
   const downloadLink =
-    "https://www.dropbox.com/scl/fi/omq4m708fwp683p565f1k/Get-Started-with-Dropbox.pdf?rlkey=raqq3haus731nzqteht0e4a1m&st=czwyivbw&dl=1";
+    "https://www.dropbox.com/scl/fi/o7handvfuh8qsdggdaw8b/Resume-Firdaus.pdf?rlkey=7r2xru8ob01ccdowuzcvzx1dv&st=k1r90yrp&dl=1";
 
   const handleDownload = () => {
     window.open(downloadLink, "_blank"); // Forces opening in a new tab
@@ -37,7 +37,7 @@ function AboutMe() {
             to my work.
           </h4>
           <h4 className="font-poppins text-base leading-loose text-gray-500">
-            With a 6 years experience as a professional Full Stack Developer, I
+            With a 3 years experience as a professional Full Stack Developer, I
             have acquired the skills neccessary to build great and premium
             websites.
           </h4>

@@ -5,6 +5,7 @@ import Services from "./sections/Services";
 import WorkExperiences from "./sections/WorkExperiences";
 import ContactMe from "./sections/ContactMe";
 import Footer from "./sections/Footer";
+import MySkills from "./sections/MySkills";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
       </section>
       <section className="px-12 max-w-7xl mx-auto">
         <AboutMe />
+      </section>
+      <section className="px-12 max-w-7xl mx-auto">
+        <MySkills />
       </section>
       <section className="px-12 mx-0 bg-gray-50">
         <Services />
